@@ -32,19 +32,23 @@ module.exports = {
       },
     ],
   },
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
   // Define plugins to extend webpack functionality
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Development', // Title of the generated HTML file
-      template: 'index.html', // Template HTML file to use
+      template: path.resolve(__dirname, './client/public/index.html'), // Template HTML file to use
     }),
   ],
   // Define settings for the development server
   devServer: {
     static: {
-      publicPath: '/build', // Serve files from the build directory
-      directory: path.resolve(__dirname, 'build'), // Directory to serve
+      publicPath: '/dist', // Serve files from the dist directory
+      directory: path.resolve(__dirname, 'dist'), // Directory to serve
     },
+    historyApiFallback: true,
     port: 8080, // Port to run the development server
     proxy: [
       {

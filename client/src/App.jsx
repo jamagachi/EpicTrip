@@ -8,6 +8,7 @@ const App = () => {
   return (
     <div className='router'>
       <main>
+        <h1>Test</h1>
         <div className='App'>
           <NavBar />
         </div>

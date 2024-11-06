@@ -15,9 +15,9 @@ app.use(express.static(path.resolve(__dirname, '../dist/client')));
 app.use('/api', apiRouter);
 
 // Serve the client app
-// app.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname, '../dist/client', 'index.html'));
-// });
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../dist/client', 'index.html'));
+});
 
 // catch-all route handler for any requests to an unknown route
 app.use((req, res) => res.status(404).send('Page Not Found!'));
