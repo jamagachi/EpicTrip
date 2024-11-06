@@ -30,6 +30,10 @@ module.exports = {
         test: /\.s?css/, // Match files ending in .css or .scss
         use: ['style-loader', 'css-loader', 'sass-loader'], // Use loaders to process CSS and SCSS files
       },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      },
     ],
   },
   resolve: {

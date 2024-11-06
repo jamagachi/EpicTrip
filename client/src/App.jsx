@@ -1,21 +1,24 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import NavBar from './components/NavBar.jsx';
-import Planner from './components/Planner';
-import '../public/style.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './pages/NavBar';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Planner from './pages/Planner';
+import CreateTrip from './pages/CreateTrip';
+
+const router = createBrowserRouter([
+  { path: '/', element: <Home /> },
+  { path: '/login', element: <Login /> },
+  { path: '/create-trip', element: <CreateTrip /> },
+  { path: '/planner', element: <Planner /> },
+]);
 
 const App = () => {
   return (
     <div className='router'>
-      <main>
-        <h1>Hi</h1>
-        <h2>Hello</h2>
-        <Planner />
-        {/* <Routes> */}
-        {/* <Route path='/' element={<Navbar />} /> */}
-        {/* <Route path='/planner' element={<Planner />} />
-        </Routes> */}
-      </main>
+      <Navbar />
+      <RouterProvider className='routes' router={router} />
     </div>
   );
 };
