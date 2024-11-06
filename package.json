@@ -5,8 +5,10 @@
   "main": "server/server.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production node server/server.js",
+    "start:frontend": "webpack serve --config webpack.config.js --port 8080",
+    "start:backend": "nodemon ./server/server.js",
     "build": "webpack",
-    "dev": "concurrently \"cross-env NODE_ENV=development webpack-dev-server --open --hot --progress --color \" \"nodemon ./server/server.js\"",
+    "dev": "concurrently \"cross-env NODE_ENV=development npm run start:frontend\" \"npm run start:backend\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tamika Blakey",

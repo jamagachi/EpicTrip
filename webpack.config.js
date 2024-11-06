@@ -50,11 +50,11 @@ module.exports = {
     },
     historyApiFallback: true,
     port: 8080, // Port to run the development server
-    proxy: [
-      {
-        context: ['/api'], // Match API requests
-        target: 'http://localhost:5000', // Proxy target
-      },
-    ],
+    //   proxy: [
+    //     {
+    //       context: ['/api'], // Match API requests
+    //       target: 'http://localhost:3000', // Proxy target
+    //     },
+    //   ],
   },
 };
