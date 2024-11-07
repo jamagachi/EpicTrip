@@ -1,0 +1,47 @@
+.msg-box {
+  border: solid 1px black;
+  background-color: white;
+  border-radius: 15px;
+  margin: 10%;
+  padding: 2em 5em;
+  max-width: 90vw; /* Responsive max-width to handle smaller screens */
+  width: 100%; /* Allow it to fill the parent width */
+  font-size: large;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.msg-box img {
+  max-width: 200px; /* Sets a pixel limit for larger screens */
+  width: 100%; /* Ensures image scales within the container */
+  height: auto; /* Maintains aspect ratio */
+  display: block;
+  margin: 0.5em 0;
+}
+
+@media (max-width: 600px) {
+  .msg-box img {
+    max-width: 80%; /* Allows more flexibility on smaller screens */
+  }
+}
+
+.msg-box h1,
+.msg-box h3 {
+  text-align: center;
+  margin: 0.5em 0;
+  word-wrap: break-word;
+  width: 100%;
+}
+
+.home-button {
+  background-color: #eeb592;
+}
+
+.home-button:hover {
+  font-style: italic;
+  color: white;
+  background-color: #1e6dc9;
+}

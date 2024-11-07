@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-weight: 1000;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+button {
+  font-weight: 600;
+  width: 12em;
+  border-radius: 100px;
+  margin-top: 1em;
+  padding: 1em;
+  color: black;
+  font-size: medium; /* Adjusts button text size */
+  cursor: pointer; /* Shows pointer on hover */
+  border: none; /* Removes default button border */
+}

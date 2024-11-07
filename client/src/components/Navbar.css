@@ -1,0 +1,56 @@
+.site-title {
+  font-size: 3rem;
+}
+
+.routes {
+  position: relative;
+}
+
+.navbar {
+  background-color: #8ebff7;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav {
+  color: black;
+  position: relative;
+  width: 100%;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+}
+
+/* .nav li.active { */
+/* background-color: lavender; */
+/* background-color: blue; */
+/* } */
+
+.nav li:hover {
+  font-style: italic;
+  color: white;
+}

@@ -1,0 +1,9 @@
+.bg-img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  margin: none;
+  background-size: cover;
+  height: 100vh;
+}
