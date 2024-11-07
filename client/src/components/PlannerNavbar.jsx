@@ -1,23 +1,32 @@
 import React from 'react';
+import './PlannerNavbar.css';
 
-const PlannerNavbar = () => {
+const PlannerNavbar = ({ setPlannerTool }) => {
   return (
     <div className='planner-navbar'>
-      <nav className='nav'>
-        <a href='/' className='planner-navbar-title'>
-          Plan Trip
-        </a>
-        <ul>
-          <li>
-            <a href='/view-trips'>View Trips</a>
-          </li>
-          <li>
-            <a href='/create-trip'>Create Trip</a>
-          </li>
-          {/* <li> */}
-          {/* <a href='/resources'>Resources</a> */}
-          {/* </li> */}
-        </ul>
+      <h1>My Planner</h1>
+      <nav className='planner-nav'>
+        <p
+          id='trip-dash'
+          className='planner-tools'
+          onClick={() => setPlannerTool('dashboard')}
+        >
+          Dashboard
+        </p>
+        <p
+          id='view-trips'
+          className='planner-tools'
+          onClick={() => setPlannerTool('view')}
+        >
+          View Trips
+        </p>
+        <p
+          id='create-trips'
+          className='planner-tools'
+          onClick={() => setPlannerTool('create')}
+        >
+          Create Trip
+        </p>
       </nav>
     </div>
   );

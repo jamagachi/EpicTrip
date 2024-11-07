@@ -37,11 +37,20 @@
 }
 
 .home-button {
+  text-decoration: none;
   background-color: #eeb592;
 }
 
 .home-button:hover {
+  background-color: #1e6dc9;
+}
+
+.button-link:hover {
   font-style: italic;
   color: white;
-  background-color: #1e6dc9;
+}
+
+.button-link {
+  text-decoration: none;
+  color: black;
 }

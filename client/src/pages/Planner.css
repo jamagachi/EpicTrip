@@ -1,0 +1,24 @@
+.planner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.planner-sidebar {
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.planner-page {
+  background-color: #8ebff7;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  padding-top: 10%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}

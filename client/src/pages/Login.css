@@ -2,8 +2,8 @@
   border: solid 1px black;
   background-color: white;
   border-radius: 15px;
-  margin: 10%;
-  padding: 2em 5em;
+  margin: 10% 50%;
+  padding: 2em 5em 8em 5em;
   max-width: 90vw; /* Responsive max-width to handle smaller screens */
   width: 100%; /* Allow it to fill the parent width */
   font-size: large;
@@ -33,4 +33,9 @@
 .login-button:hover {
   background-color: #f4a16e;
   color: black;
+  font-style: italic;
+}
+
+.login-button {
+  color: white;
 }

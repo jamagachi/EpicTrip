@@ -14,6 +14,7 @@
   "author": "Tamika Blakey",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.7.7",
     "define-lazy-prop": "^3.0.0",
     "express": "^4.21.1",
     "node-fetch": "^3.3.2",

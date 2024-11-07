@@ -54,11 +54,19 @@ module.exports = {
     },
     historyApiFallback: true,
     port: 8080, // Port to run the development server
-    //   proxy: [
-    //     {
-    //       context: ['/api'], // Match API requests
-    //       target: 'http://localhost:3000', // Proxy target
-    //     },
-    //   ],
+    /**
+     * proxy is required in order to make api calls to
+     * express server while using hot-reload webpack server
+     * routes api fetch requests from localhost:8080/api/* (webpack dev server)
+     * to localhost:3000/api/* (where our Express server is running)
+     */
+    proxy: [
+      {
+        context: ['/api'], // Match API requests
+        target: 'http://localhost:3000', // Proxy target; where your backend is running
+        secure: false,
+        changeOrigin: true, // This helps with some CORS issues
+      },
+    ],
   },
 };

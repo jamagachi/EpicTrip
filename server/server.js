@@ -11,6 +11,16 @@ app.use(express.urlencoded({ extended: true }));
 // serve static files from client build
 // app.use(express.static(path.resolve(__dirname, '../dist')));
 
+// CONSOLE LOG TESTING
+// app.use((req, res, next) => {
+//   console.log(`
+//   * FLOW METHOD ***\n
+//   URL: ${req.url}\n
+//   BODY: ${req.body}\n
+//   METHOD: ${req.method}\n`);
+//   return next();
+// });
+
 // define route handlers
 app.use('/api', apiRouter);
 

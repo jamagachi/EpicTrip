@@ -1,24 +1,24 @@
 import React from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/NavBar';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Planner from './pages/Planner';
 import CreateTrip from './pages/CreateTrip';
+import ViewTrips from './pages/ViewTrips';
 import './App.css';
-
-const router = createBrowserRouter([
-  { path: '/', element: <Home /> },
-  { path: '/login', element: <Login /> },
-  { path: '/create-trip', element: <CreateTrip /> },
-  { path: '/planner', element: <Planner /> },
-]);
 
 const App = () => {
   return (
     <div className='router'>
       <Navbar />
-      <RouterProvider className='routes' router={router} />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/create-trips' element={<CreateTrip />} />
+        <Route path='/view-trips' element={<CreateTrip />} />
+        <Route path='/planner' element={<Planner />} />
+      </Routes>
     </div>
   );
 };

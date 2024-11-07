@@ -1,0 +1,15 @@
+.test {
+  border: solid 1px black;
+  background-color: white;
+  border-radius: 15px;
+  margin: 10% 50%;
+  padding: 2em 5em 8em 5em;
+  max-width: 90vw; /* Responsive max-width to handle smaller screens */
+  width: 100%; /* Allow it to fill the parent width */
+  font-size: large;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

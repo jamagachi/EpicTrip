@@ -1,4 +1,5 @@
 import React from 'react';
+import './ViewTrips.css';
 
 const ViewTrips = () => {
   return (
@@ -10,11 +11,7 @@ const ViewTrips = () => {
         <ul>
           <li>
             {' '}
-            <p>Current Trip #1</p>
-          </li>
-          <li>
-            {' '}
-            <p>Current Trip #2</p>
+            <p>Camp Codesmith: Fall Fun</p>
           </li>
         </ul>
       </div>
@@ -24,11 +21,11 @@ const ViewTrips = () => {
         <ul>
           <li>
             {' '}
-            <p>Upcoming Trip #1</p>
+            <p>2024 Christmas Cabin Trip</p>
           </li>
           <li>
             {' '}
-            <p>Upcoming Trip #2</p>
+            <p>2025 Family Reunion</p>
           </li>
         </ul>
       </div>
@@ -38,11 +35,11 @@ const ViewTrips = () => {
         <ul>
           <li>
             {' '}
-            <p>Past Trip #1</p>
+            <p>2023 Staycation</p>
           </li>
           <li>
             {' '}
-            <p>Past Trip #2</p>
+            <p>2022 Caribbean Cruise</p>
           </li>
         </ul>
       </div>
